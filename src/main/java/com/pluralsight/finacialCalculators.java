@@ -4,8 +4,25 @@ import java.util.Scanner;
 
 public class finacialCalculators {
     public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
 
-        Scanner scan = new Scanner(System.in);
+    System.out.println("Choose a calculator \n 1. Mortage Calculator \n 2. Future Value \n 3.Present value");
+    System.out.print("Option: ");
+    int option = scan.nextInt();
+
+    if (option == 1) {
+        mortageCalculator();
+    } else if (option == 2) {
+        //futureeValue();
+    } else{
+        System.out.println("Option not available: Restart");
+
+    }
+
+    }
+
+
+      public static void mortageCalculator() {
 
         System.out.print("Enter Loan Amount: ");
         double loanAmount = scan.nextDouble();
