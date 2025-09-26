@@ -26,14 +26,20 @@ public class FututeValue {
         System.out.print("Principal"); //intialDepositAmount
        double Principal = scan.nextDouble();
 
-       System.out.print("Rate"); //Annual Interest Rate
+       System.out.print("Rate"); //Annual Interest Rate 1.75%
        double interestRate = scan.nextDouble();
 
        System.out.print("Numbers Of Years"); //he total number of years the deposit will earn interest
-       int Years = scan.nextInt();
+       int Years = scan.nextInt(); // 5 years
 
        System.out.print("Days Per Year"); //Daily compounding assumes 365 days per year.
-       int Days = scan.nextInt();
+       int Days = scan.nextInt(); // 365
+
+
+       //FV = P × (1 + (r / 365) )^(365 × t)
+
+      double principal = interestRate * (1 + (interestRate / Days) * (Days * ))
+
 
 
 

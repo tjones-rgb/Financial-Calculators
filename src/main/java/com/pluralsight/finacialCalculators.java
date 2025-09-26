@@ -25,15 +25,15 @@ public class finacialCalculators {
       public static void mortageCalculator() {
 
         System.out.print("Enter Loan Amount: ");
-        double loanAmount = scan.nextDouble();
+        double loanAmount = mortageCalculator.nextDouble();
 
 
         System.out.print("Enter Interest Rate: ");
-        double interestRate = scan.nextDouble() /100;
+        double interestRate = mortageCalculator.nextDouble() /100;
 
 
         System.out.print("Enter Loan Length(in years): ");
-        int loanLengthInYears = scan.nextInt();
+        int loanLengthInYears = mortageCalculator.nextInt();
 
         System.out.printf("%.2f - %.2f - %d", loanAmount, interestRate, loanLengthInYears);
         /** M = P × (i * (1 + i )^n / ( (1 + i)^n ) - 1)
