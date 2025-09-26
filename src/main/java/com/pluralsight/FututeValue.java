@@ -33,12 +33,16 @@ public class FututeValue {
        int Years = scan.nextInt(); // 5 years
 
        System.out.print("Days Per Year"); //Daily compounding assumes 365 days per year.
-       int Days = scan.nextInt(); // 365
+       int days = scan.nextInt(); // 365
+
+        int days = 365 * Years;
+
+        double days = Years /
 
 
        //FV = P × (1 + (r / 365) )^(365 × t)
 
-      double principal = interestRate * (1 + (interestRate / Days) * (Days * ))
+      double principal = interestRate * (1 + (interestRate / days) * (days * ));
 
 
 
