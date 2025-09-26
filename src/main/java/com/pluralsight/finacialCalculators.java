@@ -12,7 +12,7 @@ public class finacialCalculators {
 
 
         System.out.print("Enter Interest Rate: ");
-        double interestRate = scan.nextDouble();
+        double interestRate = scan.nextDouble() /100;
 
 
         System.out.print("Enter Loan Length(in years): ");
@@ -27,7 +27,7 @@ public class finacialCalculators {
 
         double monthlyI = interestRate /12;
 
-        double monthlyPayments = loanAmount * (monthlyI * Math.pow(1 + monthlyI, numberOfMonthlyPayments) / (monthlyI + numberOfMonthlyPayments) - 1);
+        double monthlyPayments = loanAmount * (monthlyI * Math.pow (1 + monthlyI, numberOfMonthlyPayments) / (Math.pow(1 +monthlyI, numberOfMonthlyPayments) - 1));
 
         double totalInterest = (monthlyPayments * numberOfMonthlyPayments)-loanAmount;
 
